@@ -1,3 +1,6 @@
+// Write a program that returns the grade based on a numeric score.
+
+// Implement a simple calculator that asks for two numbers and an operator (+ - * /).
 package main
 
 import (
@@ -29,7 +32,7 @@ func calculator(x, y int, op rune) (int, error) {
 		return x * y, nil
 	case '/':
 		if y == 0 {
-			return 0, fmt.Errorf("cannot divide by zero")
+			return 0, fmt.Errorf("can't divide by zero")
 		}
 		return x / y, nil
 	default:
